@@ -32,9 +32,14 @@
   }
   
   .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    background-color: #f9fafc;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
   }
   
   .navbar__brand {
@@ -61,7 +66,8 @@
     color: #1d3557;
     margin: 20px 0;
   }
-  
+
+   
   /* Menu Styles */
   
   .explore__menu__container {
@@ -134,7 +140,75 @@
     width: 120%;
     height: 200px;
   }
+
+  .email__container {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .email__subcribe__input {
+    display: flex;
+    align-items: center;
+  }
+
+  .email__text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 700;
+    font-family: 'Merriweather' sans-serif;
+  }
+
+  .email__input {
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
   
+  .email__input::placeholder {
+    color: #bdbcbc;
+  }
+
+  /*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }*/
+  .footer {
+        display: flex;
+        margin-top: 45px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem 1rem 0 0;
+        background-image: linear-gradient(
+          to right, 
+          #ff512f 0%,
+          #dd2476 51%,
+          #ff512f 100%
+        );      
+      }
+
+  .footer > img {
+      width:300px;
+      filter: brightness(0) invert(1);
+    } 
+
+  .footer > ul {
+      margin-top: -1rem;
+      color: #fff
+    }
+  
+  .footer > ul > li {
+      margin: 5px 0;
+    }
+
   @media (min-width: 768px) {
     .navbar {
       justify-content: space-between;
@@ -154,7 +228,19 @@
       justify-content: space-between;
       gap: 10px;
     }
+    .email__text{
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    .email__container {
+      display: flex;
   
+      justify-content: center;
+    }
+    .email__input {
+      width: 20rem;
+    }
+
     .explore__menu__container {
       position: relative;
     }
@@ -198,6 +284,13 @@
     .restaurants__flex {
       width: 100%;
     }
+    
+    .footer {
+      margin-top : 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
   
   @media (min-width: 1020px) {
@@ -207,6 +300,11 @@
   
     .hero__text {
       font-size: 50px;
+    }
+
+    .email__text {
+      font-size: 3rem;
+      line-height: 1;
     }
     .explore__menu__lists {
       gap: 20px;
