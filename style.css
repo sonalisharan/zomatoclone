@@ -21,7 +21,7 @@ body {
       padding: 12px;
       border: none;
       border-radius: 6px;
-
+      cursor: pointer;
 }
 .container {
     width:100%;
@@ -56,6 +56,22 @@ body {
     width: 100%;
 }
 
+.hero__text {
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+}
+
+/* Menu Styles*/ 
+.food__menu__card {
+    width: 100%;
+}
+
+.food__image {
+    width: 100%;
+}
+
+
 @media (min-width: 768px ){
     .navbar {
         justify-content: space-between;
@@ -65,7 +81,7 @@ body {
         width: 150px;
     }
     .button__primary {
-        padding: 20px;
+        padding: 12px 20px;
         font-size: 20px;
     }
     .hero__container {
@@ -79,14 +95,18 @@ body {
 
 @media (min-width: 1020px) {
     .container {
-        max-width: 1010px;
+        max-width: 900px;
     }
-    .hero__image__container {
-        width: 500px ;
-        height: 500px;
+    
+    .hero__text {
+        font-size: 45px;
     }
+    
 }
 
 @media (min-width: 1400) {
+    .container {
+        max-width: 1250px;
+    }
 
 }
